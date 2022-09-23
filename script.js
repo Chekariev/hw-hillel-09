@@ -26,11 +26,11 @@ function createTask(text) {
   const div = document.createElement("div");
   div.classList.add("task");
 
-  let input = document.createElement("input");
+  const input = document.createElement("input");
   input.addEventListener("click", changeTaskState); // устанавливаем обработчик на нажатие по checkbox - один и тот же для всех элементов
   input.type = "checkbox";
 
-  let p = document.createElement("p");
+  const p = document.createElement("p");
   p.innerText = text;
 
   div.append(input);
